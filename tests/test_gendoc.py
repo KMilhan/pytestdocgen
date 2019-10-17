@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from pytestdocgen.gendoc import td_to_markdown, tc_to_markdown
-from pytestdocgen.object import TestFile, TestDir
+from pytestdocgen.gendoc import tc_to_markdown, td_to_markdown
+from pytestdocgen.object import TestDir, TestFile
 
 here = Path(__file__).parent
 

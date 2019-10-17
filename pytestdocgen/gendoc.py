@@ -1,11 +1,11 @@
 from datetime import datetime
 from itertools import chain, zip_longest
 from pathlib import Path
-from typing import Iterable, Tuple, List
+from typing import Iterable, List, Tuple
 
 import jinja2
 
-from pytestdocgen.object import TestDir, TestCase
+from pytestdocgen.object import TestCase, TestDir
 
 here: Path = Path(__file__).parent
 # Jinja env with minor tweaks

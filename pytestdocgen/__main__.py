@@ -20,7 +20,7 @@ Options:
 import sys
 from copy import copy
 from pathlib import Path
-from typing import Optional, Dict
+from typing import Dict, Optional
 
 import toml as toml
 from docopt import docopt
@@ -64,7 +64,7 @@ def read_pyproject_toml(working_dir: Path) -> Dict[str, Optional[str]]:
 
 
 def override_args_over_config(
-        args: dict, config: dict
+    args: dict, config: dict
 ) -> Dict[str, Optional[str]]:
     """
     Merge two options with priority.

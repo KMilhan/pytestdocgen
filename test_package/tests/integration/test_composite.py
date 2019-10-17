@@ -1,6 +1,6 @@
 import pytest
 
-from mock_package import add, sub, sigma
+from mock_package import add, sigma, sub
 
 
 def test_addition_and_subtraction_is_the_opposite():

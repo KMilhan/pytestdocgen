@@ -1,10 +1,10 @@
 from collections import deque
 from os import PathLike
 from pathlib import Path
-from typing import Union, Iterable
+from typing import Iterable, Union
 
 import cchardet
-from parso.python.tree import PythonNode, Module
+from parso.python.tree import Module, PythonNode
 
 
 def read_with_utf8(path: Union[PathLike, Path]) -> str:

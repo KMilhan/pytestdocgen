@@ -1,17 +1,17 @@
 from collections import OrderedDict
 from os import PathLike
 from pathlib import Path
-from typing import List, Tuple, Union, Optional
+from typing import List, Optional, Tuple, Union
 
 import parso
-from parso.python.tree import PythonNode, Function, Module
+from parso.python.tree import Function, Module, PythonNode
 
 from pytestdocgen.gdocstring import RelaxedGoogleDocstring
 from pytestdocgen.parse import (
-    read_with_utf8,
     bfs_test_cases_in_module,
-    find_all_test_files,
     find_all_decorators,
+    find_all_test_files,
+    read_with_utf8,
 )
 
 

@@ -1,7 +1,7 @@
 from pathlib import Path
 
+from pytestdocgen.object import TestDir, TestFile
 from pytestdocgen.parse import find_all_test_files
-from pytestdocgen.object import TestFile, TestDir
 
 here = Path(__file__).parent
 
